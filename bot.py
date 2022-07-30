@@ -32,7 +32,7 @@ async def on_message(message):
 
     if message.content.startswith('$laughat'):
         user = message.mentions
-        await message.channel.send(user[0].mention + ' <:kekw:762494544499048449>')
+        await message.channel.send(user[0].mention + ' <:kek:782113232848289842>')
         return
 
     if '69' in message.content:
@@ -41,7 +41,7 @@ async def on_message(message):
         return
 
     if 'lulw' in message.content:
-        await message.channel.send('I think you meant kekw <:kekw:762494544499048449>')
+        await message.channel.send('I think you meant kekw <:kek:782113232848289842>')
         return
 
     if message.content.startswith('$emojis'):
@@ -55,7 +55,7 @@ async def on_message(message):
         await message.channel.send('UWU')
         return
 
-    if message.content.startswith('im') or message.content.startswith('i’m') or message.content.startswith('I’m'):
+    if message.content.startswith('im ') or message.content.startswith('i’m ') or message.content.startswith('I’m '):
         await message.channel.send('Hi ' + message.content.split(' ', 1)[1])
         return
 
