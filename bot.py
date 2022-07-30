@@ -59,14 +59,15 @@ async def on_message(message):
         await message.channel.send('Hi ' + message.content.split(' ', 1)[1])
         return
 
-    brooklyn_99_quotes = [ 'Luke, I am your Father!',
-    ]
+    Luke_responses = [ 'Luke, I am your Father!', 
+                'Luke? Who is this Luke?',
+                'Hey I know Luke!']
 
     if 'Luke' in message.content:
-        response = random.choice(brooklyn_99_quotes)
+        response = random.choice(Luke_responses)
         await message.channel.send(response)
 
-    if message.content == 'Andy':
+    if 'Andy' in message.content or 'andy' in message.content:
         with open('andy.gif', 'rb') as f:
             picture = discord.File(f)
             await message.channel.send(file=picture)
