@@ -62,7 +62,7 @@ async def on_message(message):
     brooklyn_99_quotes = [ 'Luke, I am your Father!',
     ]
 
-    if message.content == 'Luke':
+    if 'Luke' in message.content:
         response = random.choice(brooklyn_99_quotes)
         await message.channel.send(response)
 
